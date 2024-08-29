@@ -1,0 +1,119 @@
+{
+    "StartUp": {
+        "next": [
+            "zybz",
+            "sub_gbgg",
+            "sub_dj",
+            "sub_ks",
+            "sub_gbtc0",
+            "sub_qd",
+            "sub_qdapp"
+        ]
+    },
+    "zybz": {
+        "recognition": "OCR",
+        "expected": "心纸君",
+        "roi": [
+            291,
+            1037,
+            76,
+            139
+        ]
+    },
+    "sub_gbgg": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "gbgg.png",
+        "roi": [
+            645,
+            201,
+            40,
+            45
+        ],
+        "action": "Click"
+    },
+    "sub_dj": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "点击",
+        "roi": [
+            218,
+            1106,
+            109,
+            76
+        ],
+        "action": "Click"
+    },
+    "sub_ks": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "开始",
+        "roi": [
+            234,
+            1059,
+            237,
+            98
+        ],
+        "action": "Click"
+    },
+    "sub_gbtc0": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "今日",
+        "roi": [
+            300,
+            1070,
+            140,
+            51
+        ],
+        "action": "Click",
+        "target": [
+            278,
+            1082,
+            32,
+            30
+        ],
+        "next": [
+            "sub_gbtc1"
+        ]
+    },
+    "sub_gbtc1": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "今日",
+        "roi": [
+            300,
+            1070,
+            140,
+            51
+        ],
+        "action": "Click",
+        "target": [
+            607,
+            76,
+            42,
+            46
+        ]
+    },
+    "sub_qd": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            152,
+            672,
+            439,
+            215
+        ],
+        "action": "Click"
+    },
+    "sub_gbapp": {
+        "action": "StopApp",
+        "package": "com.qookkagames.codekite.gw.hk"
+    },
+    "sub_qdapp": {
+        "is_sub": true,
+        "action": "StartApp",
+        "package": "com.qookkagames.codekite.gw.hk/com.ejoy.unitysdk.UnitySdkActivity"
+    }
+}
