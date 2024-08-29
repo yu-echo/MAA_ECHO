@@ -1,0 +1,46 @@
+{
+    "ActivityStageDifficulty": {
+        "next": [
+            "ActivityStageDifficulty_Hard",
+            "ActivityStageDifficultyToRight"
+        ]
+    },
+    "ActivityStageDifficulty_Hard": {
+        "recognition": "OCR",
+        "expected": [
+            "艰难"
+        ],
+        "roi": [
+            971,
+            221,
+            194,
+            51
+        ],
+        "next": [
+            "ReadyForAction"
+        ]
+    },
+    "ActivityStageDifficultyToRight": {
+        "recognition": "OCR",
+        "expected": [
+            "故事",
+            "意外"
+        ],
+        "roi": [
+            971,
+            221,
+            194,
+            51
+        ],
+        "action": "Click",
+        "target": [
+            1196,
+            238,
+            24,
+            20
+        ],
+        "next": [
+            "ActivityStageDifficulty"
+        ]
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "Wilderness": {
+        "next": [
+            "EnterWilderness",
+            "CollectEXP",
+            "CollectMoney",
+            "CollectAwards",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_StartUp"
+        ]
+    },
+    "EnterWilderness": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/EnterWilderness.png",
+        "roi": [
+            889,
+            348,
+            242,
+            132
+        ],
+        "action": "Click",
+        "next": [
+            "EnterWilderness",
+            "CollectEXP",
+            "CollectMoney",
+            "CollectAwards",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeLoading"
+        ]
+    },
+    "CollectEXP": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/CollectEXP.png",
+        "roi": [
+            455,
+            87,
+            139,
+            134
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1,
+        "next": [
+            "CollectMoney",
+            "CollectAwards",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "CollectMoney": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/CollectMoney.png",
+        "roi": [
+            685,
+            34,
+            132,
+            134
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1,
+        "next": [
+            "CollectAwards",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "CollectAwards": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/CollectAwards.png",
+        "roi": [
+            680,
+            170,
+            140,
+            140
+        ],
+        "action": "Click",
+        "next": [
+            "Sub_ObtainedAwards",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "CollectTrust": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/CollectTrust.png",
+        "roi": [
+            0,
+            58,
+            188,
+            438
+        ],
+        "action": "Click",
+        "next": [
+            "TrustMax",
+            "CollectTrust",
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "TrustDialogueNext": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/TrustDialogueNext.png",
+        "roi": [
+            1119,
+            631,
+            124,
+            89
+        ],
+        "action": "Click",
+        "next": [
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "TrustDialogueInteraction": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/TrustDialogueInteraction.png",
+        "roi": [
+            1095,
+            42,
+            185,
+            593
+        ],
+        "action": "Click",
+        "next": [
+            "TrustDialogueNext",
+            "TrustDialogueInteraction",
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    },
+    "TrustMax": {
+        "recognition": "TemplateMatch",
+        "template": "Wilderness/TrustMax.png",
+        "roi": [
+            0,
+            162,
+            141,
+            114
+        ],
+        "action": "Click",
+        "next": [
+            "Sub_HomeButton",
+            "HomeFlag"
+        ]
+    }
+}
